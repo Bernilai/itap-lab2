@@ -82,7 +82,4 @@ public abstract class Transport {
         this.numberOfWheels = numberOfWheels;
     }
 
-//    public void displayInfo() {
-//        System.out.println("Brand: " + brand + ", Model: " + model + ", Year: " + year + ", Color: " + color + ", Max Speed: " + maxSpeed + " km/h, Wheels: " + numberOfWheels);
-//    }
 }

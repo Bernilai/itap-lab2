@@ -8,7 +8,6 @@ public class Car extends Transport {
     private EngineType engineType;
     private int trunkVolume;
 
-    // Конструктор по умолчанию
     public Car() {
         super();
         this.numberOfSeats = 0;
@@ -16,7 +15,6 @@ public class Car extends Transport {
         this.trunkVolume = 0;
     }
 
-    // Полный конструктор
     public Car(String brand, String model, int year, String color, int maxSpeed, int numberOfWheels, int numberOfSeats, EngineType engineType, int trunkVolume) {
         super(brand, model, year, color, maxSpeed, numberOfWheels);
         this.numberOfSeats = numberOfSeats;
@@ -34,7 +32,6 @@ public class Car extends Transport {
         System.out.println("Car" + " " + getBrand() + " " + getModel() + " has stopped");
     }
 
-    // Геттеры и сеттеры
     public int getNumberOfSeats() {
         return numberOfSeats;
     }
@@ -56,9 +53,4 @@ public class Car extends Transport {
         this.trunkVolume = trunkVolume;
     }
 
-//    @Override
-//    public void displayInfo() {
-//        super.displayInfo();
-//        System.out.println("Number of Passengers: " + numberOfPassengers + ", Engine Type: " + engineType + ", Trunk Volume: " + trunkVolume + " liters");
-//    }
 }
