@@ -9,7 +9,6 @@ public abstract class Transport {
     private int maxSpeed;
     private int numberOfWheels;
 
-    // Конструктор по умолчанию
     public Transport() {
         this.brand = "Unknown";
         this.model = "Unknown";
@@ -19,7 +18,6 @@ public abstract class Transport {
         this.numberOfWheels = 0;
     }
 
-    // Полный конструктор
     public Transport(String brand, String model, int year, String color, int maxSpeed, int numberOfWheels) {
         this.brand = brand;
         this.model = model;
@@ -33,7 +31,6 @@ public abstract class Transport {
 
     public abstract void stop();
 
-    // Геттеры и сеттеры
     public String getBrand() {
         return brand;
     }
@@ -83,3 +80,4 @@ public abstract class Transport {
     }
 
 }
+
